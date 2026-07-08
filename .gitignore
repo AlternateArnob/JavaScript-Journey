@@ -1,0 +1,66 @@
+# ===== OS files =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Node / JS =====
+node_modules/
+dist/
+build/
+coverage/
+.env
+.env.local
+.env.*.local
+npm-debug.log*
+yarn-error.log*
+yarn-debug.log*
+
+# ===== Logs / generated text output =====
+*.log
+*.txt
+!README.txt
+
+# ===== Editor / IDE =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===== Backup files =====
+*.bak
+*.tmp
+EOF
+cat /home/claude/.gitignore
+Output
+
+# ===== OS files =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Node / JS =====
+node_modules/
+dist/
+build/
+coverage/
+.env
+.env.local
+.env.*.local
+npm-debug.log*
+yarn-error.log*
+yarn-debug.log*
+
+# ===== Logs / generated text output =====
+*.log
+
+# ===== Editor / IDE =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===== Backup files =====
+*.bak
+*.tmp
