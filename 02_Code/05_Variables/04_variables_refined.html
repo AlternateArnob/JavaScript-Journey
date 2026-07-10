@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Variables</title>
+  </head>
+
+  <body>
+    <script>
+      // Assigning a value to a variable.
+      let variable1 = 300;
+      console.log(2); // 2
+      console.log(variable1); // 300
+
+      // let calculation = 2 + 2;
+      const calculation = 2 + 2; // used const instead of let
+      console.log(calculation); // 4
+      console.log(calculation + 2); // 6
+
+      // let result = calculation + 2;
+      const result = calculation + 2; // used const instead of let
+      console.log(result); // 6
+
+      // --------------------
+
+      // let message = 'hello';
+      const message = 'hello'; // used const instead of let
+      console.log(message); // hello
+
+      // --------------------
+
+      // ; = end of a statement.
+      // console.log(message) console.log(';'); // SyntaxError
+      console.log(message); console.log('; after both statement'); // Works
+      console.log(message); console.log('; after first statement only') // Works
+
+      console.log(`This statement doesn't end with a ;`)
+
+      // --------------------
+
+      // Update: Re-assigning a value to a variable.
+      variable1 = 500; // previously it was 300
+      console.log(variable1); // 500
+
+      variable1 = variable1 + 1;
+      console.log(variable1); // 501
+
+      // --------------------
+
+      const variable2 = 3;
+      var variable3 = 3;
+    </script>
+  </body>
+
+</html>

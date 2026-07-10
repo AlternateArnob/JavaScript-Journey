@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Var Let Const</title>
+  </head>
+
+  <body>
+
+    <script>
+      // let: its value can be reassigned.
+      let variable1 = 3;
+      console.log(variable1); // 3
+
+      // --------------------
+
+      // const: its value cannot be reassigned.
+      const variable2 = 5;
+      console.log(variable2); // 5
+
+      // variable2 = 7; // Uncaught TypeError: Assignment to constant variable.
+
+      // --------------------
+
+      // var: the original way to declare variables.
+      var variable3 = 3;
+
+      // var was the original way to create variables in JavaScript.
+      // var doesn't follow the rules of scope.
+      // That is why we don't use var in modern JavaScript code.
+
+      // --------------------
+
+      // Using typeof with variables
+      console.log(typeof 3); // number
+      console.log(typeof variable2); // number
+
+      let message = 'hello';
+      console.log(message); // hello
+
+      console.log(typeof message); // string
+    </script>
+  </body>
+
+</html>
+
+<!--
+Best practice:
+- Use const by default.
+- Only use let when you need to reassign the variable.
+-->
+
+<!--
+Additional Note:
+- var is function-scoped, while let and const are block-scoped.
+- Because of this, modern JavaScript prefers let and const.
+-->

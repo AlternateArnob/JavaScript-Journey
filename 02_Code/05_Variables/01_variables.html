@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Variables</title>
+  </head>
+
+  <body>
+    <script>
+      // Follow Note 01 below.
+
+      // Assigning a value to a variable.
+      let variable1 = 300;
+      console.log(2); // 2
+      console.log(variable1); // 300
+
+      let calculation = 2 + 2;
+      console.log(calculation); // 4
+      console.log(calculation + 2); // 6
+
+      let result = calculation + 2;
+      console.log(result); // 6
+
+      // --------------------
+
+      // Assigning a string to a variable.
+      let message = 'hello';
+      console.log(message); // hello
+
+      // Follow Note 02 below.
+
+      // --------------------
+
+      // ; = end of a statement.
+      // console.log(message) console.log(';'); // SyntaxError
+      console.log(message); console.log('; after both statement'); // Works
+      console.log(message); console.log('; after first statement only') // Works
+
+      // Follow Note 03 below.
+
+      console.log(`This statement doesn't end with a ;`)
+
+      // --------------------
+
+      // Update: Re-assigning a value to a variable.
+      variable1 = 500; // previously it was 300
+      console.log(variable1); // 500
+
+      variable1 = variable1 + 1;
+      console.log(variable1); // 501
+    </script>
+  </body>
+
+</html>
+
+<!--
+Note:
+
+01. What is a variable?
+- A variable is a container for storing data.
+
+----------------------------------------
+
+02. Variable naming rules:
+  i. Can't use special words.
+    Example:
+    let let = 3; -> not allowed ❌
+    let let1 = 3; -> allowed ✅
+    let let2 = 3; -> allowed ✅
+
+  ii. Can't start with a number.
+    let 1name = 3; -> not allowed ❌
+    let na2me = 3; -> allowed ✅
+    let name3 = 3; -> allowed ✅
+
+  iii. Can't use special characters except: $ _
+    let $name = 3; -> allowed ✅
+    let _name = 3; -> allowed ✅
+
+----------------------------------------
+
+03. JavaScript has a feature called Automatic Semicolon Insertion (ASI).
+  - It inserts the last semicolon in a line of code automatically.
+  - It is a good practice to use ; always.
+-->
