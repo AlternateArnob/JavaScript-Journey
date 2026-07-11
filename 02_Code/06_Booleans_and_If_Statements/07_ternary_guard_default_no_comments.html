@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Ternary Guard Default</title>
+  </head>
+
+  <body>
+    <script>
+      true ? 'truthy' : 'falsy';
+
+      let result = true ? 'truthy' : 'falsy';
+      console.log(result);
+
+      result = 0 ? 'truthy' : 'falsy';
+      console.log(result);
+
+      // -------------------- -------------------- -------------------- -------------------- --------------------
+
+      false && console.log('hello');
+
+      let message = false && 'hello';
+      console.log(message); // false
+
+      message = 5 && 'hello';
+      console.log(message); // hello
+
+      // -------------------- -------------------- -------------------- -------------------- --------------------
+
+      let currency = 'EUR' || 'USD';
+      console.log(currency); // EUR
+
+      currency = undefined || 'USD';
+      console.log(currency); // USD
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Ternary Guard Default</title>
+  </head>
+
+  <body>
+    <script>
+      // Ternary Operator ? :
+      true ? 'truthy' : 'falsy';
+
+      // The line above is the shortcut of Shortcut - 1 below.
+
+      // We can save a ternary operator in a variable.
+      let result = true ? 'truthy' : 'falsy';
+      console.log(result); // truthy
+
+      result = 0 ? 'truthy' : 'falsy';
+      console.log(result); // falsy
+
+      // The part above is the shortcut of Shortcut - 2 below.
+
+      // -------------------- -------------------- -------------------- -------------------- --------------------
+
+      // Guard Operator (&&):
+
+      // AND operator &&
+      // value1 && value2
+      // - checks if both sides are truthy
+
+      // AND operator &&
+      // false && value2
+      // It's impossible for both sides to be truthy
+      // So, it doesn't even check value2
+      // Stops early (short circuits)
+      // Doesn't need to run the code on the right
+      // This is called: short-circuit evaluation.
+
+      false && console.log('hello');
+
+      // The line above is the shortcut of Shortcut - 3 below.
+
+      // We can save the result of the guard operator in a variable.
+      let message = false && 'hello';
+      console.log(message); // false
+
+      message = 5 && 'hello';
+      console.log(message); // hello
+
+      // The part above is the shortcut of Shortcut - 4 below.
+
+      // -------------------- -------------------- -------------------- -------------------- --------------------
+
+      // Default Operator (||):
+
+      // OR operator ||
+      // value1 || value2
+      // - checks if at least one side is truthy
+
+      // OR operator ||
+      // true || value2
+      // We already know the result will be truthy.
+      // So, it doesn't even check value2.
+      // Stops early (short circuits).
+      // Doesn't need to run the code on the right.
+      // This is called: short-circuit evaluation.
+
+      // 'USD' is used as the default value.
+      let currency = 'EUR' || 'USD';
+      console.log(currency); // EUR
+
+      currency = undefined || 'USD';
+      console.log(currency); // USD
+
+      // The part above is the shortcut of Shortcut - 5 below.
+    </script>
+  </body>
+
+</html>
+
+<!--
+Shortcut - 1:
+
+if(true) {
+  'truthy'
+} else {
+  'falsy'
+}
+-->
+
+<!--
+Shortcut - 2:
+
+let result;
+
+if(condition) {
+  result = 'truthy'
+} else {
+  result = 'falsy'
+}
+
+console.log(result);
+-->
+
+<!--
+Shortcut - 3:
+
+if(condition) {
+  console.log('hello');
+}
+-->
+
+<!--
+Shortcut - 4:
+
+let message;
+
+if(condition) {
+  message = 'hello';
+}
+-->
+
+<!--
+Shortcut - 5:
+
+let currency;
+
+if(!condition) {
+  currency = 'USD';
+}
+-->

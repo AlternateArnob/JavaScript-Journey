@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>If-Else</title>
+  </head>
+
+  <body>
+    <script>
+      if(true)
+      {
+        console.log('hello');
+      }
+
+      // -------------------- -------------------- --------------------
+
+      if(false)
+      {
+        console.log('hello');
+      }
+
+      else
+      {
+        console.log('else');
+      }
+
+      // --------------------
+
+      if(true)
+      {
+        console.log('hello');
+      }
+
+      else
+      {
+        console.log('else');
+      }
+
+      // -------------------- -------------------- --------------------
+
+      // Practical example: Check if someone is old enough to drive.
+
+      // if(30 >= 16)
+      if(15 >= 16)
+      {
+        console.log('You can drive.');
+        console.log('Congrats.');
+      }
+
+      else
+        console.log('You cannot drive.');
+
+      // If a branch has only one line of code, the {...} are optional.
+
+      // -------------------- -------------------- --------------------
+
+      // Introduction to else-if:
+
+      if(15 >= 16)
+      {
+        console.log('You can drive.');
+        console.log('Congrats.');
+      }
+
+      else if(15 >= 14)
+        console.log('Almost there!');
+
+      else
+        console.log('You cannot drive.');
+
+      // -------------------- -------------------- --------------------
+
+      // Using variables in if statements:
+
+      const age = 15;
+
+      if(age >= 16)
+      {
+        console.log('You can drive.');
+        console.log('Congrats.');
+      }
+
+      else if(age >= 14)
+        console.log('Almost there!');
+
+      else
+        console.log('You cannot drive.');
+    </script>
+  </body>
+
+</html>
