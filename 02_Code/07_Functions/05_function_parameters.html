@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Function Parameters</title>
+  </head>
+
+  <body>
+    <script>
+      function tax1()
+      {
+        console.log(1000 * 0.1); // 100
+      }
+      tax1();
+
+      // --------------------
+
+      function tax2(cost)
+      {
+        console.log(cost * 0.1);
+      }
+      tax2(2000); // 200 // Pass an argument
+      tax2(3000); // 300 // Pass an argument
+
+      // --------------------
+
+      // Multiple parameters.
+
+      function tax3(cost, taxPercent)
+      {
+        console.log(taxPercent);
+        console.log(cost * taxPercent);
+      }
+      tax3(4000, 0.1); // 400
+      tax3(5000); // Second parameter is undefined, so the result is NaN.
+
+      // --------------------
+
+      // Default parameter value.
+
+      function calculateTax(cost, taxPercent = 0.1)
+      {
+        console.log(cost * taxPercent);
+      }
+
+      calculateTax(6000, 0.1); // 600
+      calculateTax(7000); // 700
+    </script>
+  </body>
+
+</html>
+
+<!--
+Return = gets a value out of a function
+Parameter = puts a value into a function
+-->
+
+<!--
+Parameter names follow the same rules as variable names.
+Best practice: use camelCase.
+-->

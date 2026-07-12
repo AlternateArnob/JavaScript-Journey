@@ -1,0 +1,72 @@
+<!-- Visit: https://supersimple.dev/projects/booleans/ -->
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Rock Paper Scissors</title>
+  </head>
+
+  <body>
+    <p>
+      Rock Paper Scissors
+    </p>
+
+    <button onclick="
+      console.log(pickComputerMove());
+
+      let result = '';
+
+      if(computerMove === 'rock')
+        result = 'You lose.';
+      else if(computerMove === 'paper')
+        result = 'You win.';
+      else if(computerMove === 'scissors')
+        result = 'Tie.';
+
+      alert(`You picked scissors. Computer picked ${computerMove}. ${result}`);
+    ">
+      Scissors
+    </button>
+
+    <script>
+      // Global variable
+      let computerMove = '';
+
+      function pickComputerMove()
+      {
+        const randomNumber = Math.random();
+
+        if(randomNumber >= 0 && randomNumber < 1 / 3)
+          computerMove = 'rock';
+        else if(randomNumber >= 1 / 3 && randomNumber < 2 / 3)
+          computerMove = 'paper';
+        else if(randomNumber >= 2 / 3 && randomNumber < 1)
+          computerMove = 'scissors';
+
+        return 5;
+        // return 'rock';
+
+        // We can also return:
+        // return 2 + 2;
+        // return variable1 = 7;
+        // return Math.random();
+
+        // return; // This will return undefined.
+
+        // After return statement. The function ends.
+        console.log('After Return'); // This will not run
+      }
+    </script>
+  </body>
+
+</html>
+
+<!--
+How can we use the computerMove variable without Global Variable?
+- Using return statement
+-->
+
+<!-- Return = gets a value out of a function -->
+
+<!-- Next File: Rock Paper Scissors using return statement -->
